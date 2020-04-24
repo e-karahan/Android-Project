@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -35,16 +36,59 @@ public class KitleEndeks extends AppCompatActivity {
         double kilo = Double.parseDouble(editkilo.getText().toString());
         double endex = kilo / boykare;
         twendeks.setText(String.valueOf(endex));
-       /*
+        //Sonuç textview yazdırma
+
+
         //-İdeal Kilo Hesabı
-        if (rb.isChecked()) {
-            double idealkilo = 50 + (2.3 * ((boy / 2.54) - 60));
+        //  50 + (2.3 * ((boy / 2.54) - 60))
+
+        if (rb.isChecked()) { //Erkek
+            double boymetre = boy * 100;
+            double boybolme = boymetre / 2.54;
+            boybolme-=60;
+            boybolme*=2.3;
+            double idealkilo;
+            idealkilo=50+boybolme;
             twidealkilo.setText(String.valueOf(idealkilo));
-        } else if (rb2.isChecked()) {
-            double idealkilokadin = 45.5 + (2.3 * ((boy / 2.54) - 60));
-            twidealkilo.setText(String.valueOf(idealkilokadin));
+            if(endex<18.49){
+                twsonuc.setText("İdeal Kilonun Altındasınız");
+            }
+            else if(endex>18.5 && endex<24.99){
+                twsonuc.setText("İdeal Kilodasınız");
+            }
+            else if(endex>25 && endex<29.99){
+                twsonuc.setText("İdeal Kilonun Üzerindesiniz");
+            }
+            else if(endex>30) {
+                twsonuc.setText("İdeal Kilonun Çok Üzerindesiniz");
+            }
+
+
+        } else if (rb2.isChecked()) { //Kadın
+            double boymetre = boy * 100;
+            double boybolme = boymetre / 2.54;
+            boybolme-=60;
+            boybolme*=2.3;
+            double idealkilo;
+            idealkilo=45.5+boybolme;
+            twidealkilo.setText(String.valueOf(idealkilo));
+            if(endex<18.49){
+                twsonuc.setText("İdeal Kilonun Altındasınız");
+            }
+            else if(endex>18.5 && endex<24.99){
+                twsonuc.setText("İdeal Kilodasınız");
+            }
+            else if(endex>25 && endex<29.99){
+                twsonuc.setText("İdeal Kilonun Üzerindesiniz");
+            }
+            else if(endex>30) {
+                twsonuc.setText("İdeal Kilonun Çok Üzerindesiniz");
+            }
         }
-        */
+        else{
+            Toast.makeText(KitleEndeks.this,"Lütfen Cinsiyet Seçiniz",Toast.LENGTH_LONG).show();
+        }
+
 
     }
 

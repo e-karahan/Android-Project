@@ -6,4 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".SayiTahmin">
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:text="Sayı Tahmin Oyunu"
+        android:textColor="#00887C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/gamestart" />
+
+    <Button
+        android:id="@+id/btnbasla"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:onClick="gameStart"
+        android:text="Oyuna Başla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btngeri"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:onClick="returnMain"
+        android:text="Ana Sayfa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbasla" />
 </androidx.constraintlayout.widget.ConstraintLayout>

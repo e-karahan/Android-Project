@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SayiTahmin"></activity>
+        <activity android:name=".SonucActivity"></activity>
+        <activity android:name=".TahminActivity" />
+        <activity android:name=".SayiTahmin" />
         <activity android:name=".KitleEndeks" />
         <activity android:name=".Kronometre" />
         <activity android:name=".MainActivity">
