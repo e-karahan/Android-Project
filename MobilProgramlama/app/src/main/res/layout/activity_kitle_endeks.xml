@@ -10,11 +10,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         android:text="Kitle Endeks Hesaplama"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,27 +27,29 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:text="Kilonuz  :"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnhesapla"
         app:layout_constraintEnd_toStartOf="@+id/kilo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/kilo"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginRight="200dp"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/boy" />
 
     <TextView
         android:id="@+id/textView5"
@@ -53,27 +57,29 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
         android:layout_marginLeft="57dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:text="Boyunuz :"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toStartOf="@+id/boy"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/boy"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="201dp"
-        android:layout_marginRight="201dp"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView5" />
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -81,23 +87,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
         android:layout_marginLeft="59dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
         android:text="Cinsiyet :"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="180dp"
         android:layout_height="76dp"
-        android:layout_marginEnd="77dp"
-        android:layout_marginRight="77dp"
-        android:layout_marginBottom="39dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -117,60 +124,17 @@
 
     <TextView
         android:id="@+id/tbendeks"
-        android:layout_width="0dp"
+        android:layout_width="62dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="191dp"
-        android:layout_marginRight="191dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginRight="190dp"
         android:text="00"
         android:textSize="20sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/tbsonuc"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginRight="58dp"
-        android:layout_marginBottom="105dp"
-        android:text="----------------------------------"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginBottom="24dp"
-        android:text="İdeal Kilo :"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tbsonuc"
-        app:layout_constraintEnd_toStartOf="@+id/tbideal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginBottom="29dp"
-        android:text="Kitle Endeksi :"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toStartOf="@+id/tbendeks"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/btnhesapla" />
 
     <TextView
@@ -179,37 +143,103 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
         android:layout_marginLeft="69dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="19dp"
         android:layout_marginRight="19dp"
         android:text="Sonuç  :"
         android:textSize="20sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tbsonuc"
         app:layout_constraintEnd_toStartOf="@+id/tbsonuc"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="İdeal Kilo :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tbideal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/tbideal"
-        android:layout_width="0dp"
+        android:layout_width="61dp"
         android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="23dp"
         android:layout_marginEnd="191dp"
         android:layout_marginRight="191dp"
         android:text="00"
         android:textSize="20sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView6" />
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/tbendeks" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:onClick="returnMain"
+        android:text="Ana Sayfa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbsonuc" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Kitle Endeksi :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tbendeks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tbsonuc"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="----------------------------------"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/tbideal" />
 
     <Button
         android:id="@+id/btnhesapla"
-        android:layout_width="136dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginBottom="34dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
         android:onClick="calculate"
         android:text="Hesapla"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/kilo"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

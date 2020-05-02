@@ -2,6 +2,7 @@ package com.example.mobilprogramlama;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,18 +31,13 @@ public class KitleEndeks extends AppCompatActivity {
     }
 
     public void calculate(View view) {
-        //Vucut Kitle Endeks Hesabı
         double boy = Double.parseDouble(editboy.getText().toString()) / 100;
         double boykare = boy * boy;
         double kilo = Double.parseDouble(editkilo.getText().toString());
         double endex = kilo / boykare;
         twendeks.setText(String.valueOf(endex));
-        //Sonuç textview yazdırma
-
-
         //-İdeal Kilo Hesabı
         //  50 + (2.3 * ((boy / 2.54) - 60))
-
         if (rb.isChecked()) { //Erkek
             double boymetre = boy * 100;
             double boybolme = boymetre / 2.54;
@@ -90,6 +86,10 @@ public class KitleEndeks extends AppCompatActivity {
         }
 
 
+    }
+    public void returnMain(View view){
+        Intent intent = new Intent(KitleEndeks.this,MainActivity.class);
+        startActivity(intent);
     }
 
 

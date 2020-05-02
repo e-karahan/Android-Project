@@ -33,7 +33,6 @@ public class TahminActivity extends AppCompatActivity {
     public void guess(View view){
         if(TextUtils.isEmpty(tbsayi.getText().toString())){
             Toast.makeText(this,"Lütfen Sayı Giriniz",Toast.LENGTH_SHORT).show();
-
         }else{
             sayac = sayac -1;
             int tahmin = Integer.parseInt(tbsayi.getText().toString());
@@ -51,7 +50,6 @@ public class TahminActivity extends AppCompatActivity {
                     twyardim.setText("Arttır");
                 }
                 twkalanhak.setText("Kalan Hak : "+sayac);
-
             }else{
                 //Oyun kaybedildi
                 Intent intent = new Intent(TahminActivity.this,SonucActivity.class);
@@ -59,7 +57,6 @@ public class TahminActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-
             tbsayi.setText("");
         }
 
